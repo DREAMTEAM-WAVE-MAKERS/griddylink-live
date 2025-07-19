@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GriddyLink — Internet by the People</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #111 0%, #000 100%);
+      color: #f0f0f0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .logo {
+      width: 160px;
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.95; }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      background: linear-gradient(to right, #00ffcc, #00ff88);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.2rem;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: #aaa;
+      font-size: 1.5rem;
+    }
+
+    .mission {
+      margin: 60px auto;
+      padding: 50px 20px;
+      background: #121212;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 255, 170, 0.1);
+    }
+
+    .mission h3 {
+      font-size: 2rem;
+      color: #00ffaa;
+    }
+
+    .mission p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #ccc;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    input[type="email"] {
+      width: 60%;
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px 0 0 5px;
+    }
+
+    button {
+      width: 30%;
+      padding: 12px 15px;
+      font-size: 1rem;
+      background-color: #00ff88;
+      color: #000;
+      border: none;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .cta {
+      margin-top: 60px;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #00ffff;
+    }
+
+    .cta span {
+      color: #00ff88;
+    }
+
+    .social {
+      display: block;
+      margin-top: 30px;
+      color: #00ffff;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .social:hover {
+      color: #00ff88;
+    }
+
+    footer {
+      padding: 40px 20px;
+      font-size: 0.85rem;
+      color: #666;
+      background: #0a0a0a;
+      margin-top: 60px;
+    }
+
+    .highlight {
+      background: linear-gradient(to right, #ff00cc, #3333ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="GriddyLink Logo" class="logo" />
+    <h1>GriddyLink</h1>
+    <h2>Decentralized Compute. Idle Power. Real Rewards.</h2>
+
+    <div class="cta">
+      <p>🚀 <span>Developers & builders:</span> we’re looking for YOU.<br>
+      Join the movement reshaping the internet.</p>
+    </div>
+
+    <a class="social" href="https://discord.gg/FhumSUNS" target="_blank">🔥 Join the Discord: GriddyLink HQ</a>
+    <a class="social" href="https://twitter.com/griddylink" target="_blank">@GriddyLink on Twitter</a>
+    <a class="social" href="https://instagram.com/griddylink" target="_blank">Instagram: @griddylink</a>
+  </div>
+
+  <section class="mission">
+    <h3>Power to the People. Peace to the Planet.</h3>
+    <p>
+      GriddyLink is a decentralized AI-ready network built from the power you already own — your PC, your console, your smart tech. We take what big tech hoards and give it back. This is compute for the people, by the people, with <span class="highlight">real rewards</span> and <span class="highlight">real impact</span>.
+    </p>
+    <form action="https://formspree.io/f/manjawqb" method="POST">
+      <input type="email" name="email" placeholder="Join the waitlist" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 GriddyLink. All rights reserved. Built in a box truck with love. Zeus approved.
+  </footer>
+</body>
+</html>
