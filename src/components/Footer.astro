@@ -1,0 +1,32 @@
+---
+import {Image} from "astro:assets";
+
+import griddylinkLogo from "../../public/GriddyLinkLogo.svg";
+import bisectBanner from "../../public/images/BisectBanner.webp";
+---
+
+<div id="footer" class="bg-[#222225] p-10 mt-10 border-white/10 border-t-[1px]">
+
+	<Image
+				src={griddylinkLogo}
+				alt="GriddyLink Logo"
+				width="64"
+				height="64"
+				class="float-left mr-5 mb-5"
+				loading="eager"
+		/>
+
+	<p class="text-white w-fit float-left">Copyright © 2025 GriddyLink. All rights reserved. Patent pending. <span class="text-purple-400">Zeus approved.</span>
+
+		<br/>
+
+		Site built in collaboration with <a href="https://spacegamedev.com" class="text-blue-500 hover:text-blue-300 bduration-300">SpaceGameDev Software</a>.
+
+		<br/>
+
+		Source code available on <a href="https://github.com/gridddylink/griddylink-live" class="text-teal-500 hover:text-teal-300 bduration-300">GitHub</a>.
+
+	</p>
+
+	<br/><br/><br/><br/>
+</div>

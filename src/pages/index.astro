@@ -1,0 +1,105 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+
+import SocialButton from '../components/SocialButton.astro';
+
+import XLogo from '../../public/X2.svg';
+
+import InstagramLogo from '../../public/Instagram.svg';
+import DiscordLogo from '../../public/Discord-Symbol-Blurple.svg';
+import {Image} from "astro:assets";
+import griddylinkLogo from "../../public/GriddyLinkLogo.svg";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout title='GriddyLink'>
+
+	<br/><br/>
+
+	<Image
+				src={griddylinkLogo}
+				alt="GriddyLink Logo"
+				width="64"
+				height="64"
+				class="ml-auto mr-auto w-fit logo"
+				loading="eager"
+		/>
+
+		<br/>
+
+    <h1 class="text-teal-500 text-6xl font-bold ml-auto mr-auto w-fit">GriddyLink</h1>
+	
+	<br/><br/>
+
+    <h2 class="dark:text-gray-300 text-3xl font-bold ml-auto mr-auto w-fit">Decentralized Compute. Idle Power. Real Rewards.</h2>
+
+	<br/><br/>
+
+    <p class="font-bold text-2xl ml-auto mr-auto w-fit text-fuchsia-300">
+		🚀 <span class="text-green-400">Developers & builders:</span> we’re looking for YOU.<br/>
+    	Join the movement reshaping the internet.
+	</p>
+
+	<br/><br/>
+
+	<h2 class="text-4xl font-bold w-fit ml-auto mr-auto">Join our growing community!</h1>
+
+	<br/>
+
+	<SocialButton
+		title="Join the Discord"
+		link="https://discord.gg/QMMPShntcX"
+		image={DiscordLogo}
+		alt="Discord"
+	/>
+
+	<SocialButton
+		title="X"
+		link="https://twitter.com/griddylink"
+		image={XLogo}
+		alt="X"
+	/>
+
+	<SocialButton
+		title="Instagram"
+		link="https://instagram.com/griddylink"
+		image={InstagramLogo}
+		alt="Instagram"
+	/>
+
+	<br/><br/>
+
+	<section class="ml-50 mr-50">
+    	<h3 class="text-4xl font-bold w-fit ml-auto mr-auto text-teal-500">The Revolution is Now. Power to the People, Peace to the Planet.</h3>
+		<br/><br/>
+		<p>
+    	  GriddyLink isn’t just a network—it’s a <span class="font-bold text-green-400">movement</span>. A movement built to fight the wastefulness of big tech and <span class="font-bold text-green-400">reclaim the power of computing</span> for the people. Powered by the unused potential in your everyday devices—your PC, your gaming consoles, your smart tech—GriddyLink is the <span class="font-bold text-green-400">eco-friendly solution</span> to the <span class="font-bold text-green-400">unsustainable computing infrastructure</span> of today. 
+    	   We’re here to change the game for <span class="font-bold text-green-400">everyone</span>. Through GriddyLink, the internet belongs to <span class="font-bold text-green-400">you</span>, the people. You <span class="font-bold text-green-400">earn rewards</span>, you <span class="font-bold text-green-400">reduce waste</span>, and you <span class="font-bold text-green-400">make a real difference</span> in how the planet uses its resources. This is computing <span class="font-bold text-green-400">for the people</span>, powered by <span class="font-bold text-green-400">idle devices</span>, creating a more sustainable, <span class="font-bold text-green-400">transparent</span>, and <span class="font-bold text-green-400">equitable future</span>.
+		</p>
+
+		<br/><br/>
+
+    	<form action="https://formspree.io/f/manjawqb" method="POST">
+    	  <input type="email" name="email" class="w-[90%] ml-auto p-3 rounded-l-lg font-mono bg-[#222225] text-white border-[1px] border-white/10" placeholder="Join the waitlist" required />
+
+    	  <button type="submit" class="text-white p-3 rounded-r-lg bg-teal-500 font-bold hover:bg-teal-600 duration-300 box-border hover:ring-4 hover:ring-teal-300 /50 cursor-pointer">Sign Up</button>
+    	</form>
+  </section>
+
+	
+  </div>
+</Layout>
+
+<style>
+	.logo {
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.95; }
+    }
+</style>
